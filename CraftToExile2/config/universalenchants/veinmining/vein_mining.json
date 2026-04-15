@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:veinmining_vein_mining",
+    "twilightforest:block_and_chain"
+  ],
+  "incompatible": []
+}

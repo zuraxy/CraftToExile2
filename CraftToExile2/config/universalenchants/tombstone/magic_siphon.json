@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:type_tombstone_all_weapons"
+  ],
+  "incompatible": [
+    "tombstone:plague_bringer"
+  ]
+}

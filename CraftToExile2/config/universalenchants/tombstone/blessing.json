@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:armor",
+    "tombstone:christmas_hat",
+    "mutantmonsters:mutant_skeleton_skull"
+  ],
+  "incompatible": []
+}

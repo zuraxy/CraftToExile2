@@ -1,0 +1,46 @@
+[21:00:53] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[21:00:53] [INIT] Loaded plugins:
+[21:00:53] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[21:00:53] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[21:00:53] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[21:00:53] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[21:00:53] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[21:00:53] [INIT] - net.liopyu.entityjs.EntityJSPlugin
+[21:00:54] [INFO] Loaded script server_scripts:boss_teleport_locator.js in 0.009 s
+[21:00:54] [INFO] example.js#5: Hello, World! (Loaded server scripts)
+[21:00:54] [INFO] Loaded script server_scripts:example.js in 0.0 s
+[21:00:54] [INFO] Loaded script server_scripts:remove_farmers.js in 0.0 s
+[21:00:54] [INFO] Loaded script server_scripts:return_script.js in 0.005 s
+[21:00:54] [INFO] Loaded 4/4 KubeJS server scripts in 0.026 s with 0 errors and 0 warnings
+[21:00:54] [INFO] Scripts loaded
+[21:00:54] [INFO] Initializing recipe event...
+[21:01:12] [INFO] Processing recipes...
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_hoe_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:netherite_hammer_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'simplehats:hatscraps_rare[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'outer_end:azure_chest[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'crabbersdelight:lanternfish_from_barrel[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_sword_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_helmet_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'outer_end:azure_trapped_chest[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:wartedtungstenhelmetrecipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'crabbersdelight:lanternfish_barrel[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:wartedtungstenchestplaterecipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'seadwellers:depth_helmet[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:wartedtungstenleggingsrecipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'vivecraft:jumpboots[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'simplehats:hatspecial[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:wartedtungstenbootsrecipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_pickaxe_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'vivecraft:climbclaws[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_leggings_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_chestplate_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_shovel_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_axe_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'stalwart_dungeons:warted_tungsten_shield_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'deeperdarker:resonarium_boots_smithing[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[21:01:12] [WARN] Failed to parse recipe 'simplehats:hatscraps_uncommon[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[21:01:12] [INFO] Found 11705 recipes in 247.5 ms
+[21:01:12] [INFO] Posted recipe events in 248.7 ms
+[21:01:12] [INFO] Added 0 recipes, removed 10 recipes, modified 0 recipes, with 0 failed recipes in 62.33 ms
+[21:01:47] [INFO] Server resource reload complete!
