@@ -30,6 +30,7 @@ Run the same `OneClickDownloadModpack.bat` again any time you want to reinstall 
 
 - `APPDATA is not available`: run from a normal Windows user session.
 - `Source modpack folder not found`: ensure the BAT file is in the repo root and the `CraftToExile2` folder is next to it.
+- If mods are tiny files (for example ~1 KB) or you get `zip END header not found`: your files are likely Git LFS pointers. Run `git lfs install` then `git lfs pull`, or use a proper Release asset instead of GitHub `Download ZIP`.
 - `Could not remove existing target folder`: close Minecraft/SKLauncher and try again.
 - `Copy failed with robocopy exit code ...`: retry with admin permissions and verify file access.
 - If TLauncher downloads `preview_OptiFine...jar` or `tl_skin_cape...jar`, disable those add-ons or use the pack without TLauncher injected extras. They can break Forge startup for this modpack.

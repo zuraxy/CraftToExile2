@@ -1,5 +1,5 @@
 @echo off
-setlocal EnableExtensions
+setlocal EnableExtensions EnableDelayedExpansion
 
 title CraftToExile2 - One Click Installer
 
@@ -10,6 +10,7 @@ echo.
 
 set "PACK_NAME=CraftToExile2"
 set "SOURCE_DIR=%~dp0CraftToExile2"
+set "MODS_DIR=%SOURCE_DIR%\mods"
 set "MINECRAFT_DIR=%APPDATA%\.minecraft"
 set "VERSIONS_DIR=%MINECRAFT_DIR%\versions"
 set "TARGET_DIR=%VERSIONS_DIR%\%PACK_NAME%"
@@ -25,6 +26,57 @@ if not exist "%SOURCE_DIR%" (
 	echo         "%SOURCE_DIR%"
 	echo [ERROR] Make sure this BAT file is in the repository root,
 	echo         with the CraftToExile2 folder next to it.
+	pause
+	exit /b 1
+)
+
+if not exist "%MODS_DIR%" (
+	echo [ERROR] Mods folder not found:
+	echo         "%MODS_DIR%"
+	pause
+	exit /b 1
+)
+
+set /a JAR_COUNT=0
+set /a SMALL_JAR_COUNT=0
+set /a LFS_POINTER_COUNT=0
+set "FIRST_BAD_JAR="
+
+for %%F in ("%MODS_DIR%\*.jar") do (
+	set /a JAR_COUNT+=1
+	if %%~zF LSS 2048 (
+		set /a SMALL_JAR_COUNT+=1
+		if not defined FIRST_BAD_JAR set "FIRST_BAD_JAR=%%~nxF"
+		findstr /B /C:"version https://git-lfs.github.com/spec/v1" "%%~fF" >nul 2>&1
+		if !ERRORLEVEL! EQU 0 set /a LFS_POINTER_COUNT+=1
+	)
+)
+
+if !JAR_COUNT! EQU 0 (
+	echo [ERROR] No mod JAR files found in:
+	echo         "%MODS_DIR%"
+	echo [ERROR] This source folder is incomplete.
+	pause
+	exit /b 1
+)
+
+if !SMALL_JAR_COUNT! GTR 0 (
+	echo [ERROR] Detected !SMALL_JAR_COUNT! suspiciously small mod JAR file(s).
+	if defined FIRST_BAD_JAR (
+		echo         Example: "!FIRST_BAD_JAR!"
+	)
+	echo.
+	if !LFS_POINTER_COUNT! GTR 0 (
+		echo [ERROR] These appear to be Git LFS pointer files, not real mods.
+		echo         Fix by hydrating LFS files in the repo root:
+		echo           git lfs install
+		echo           git lfs pull
+		echo.
+		echo [ERROR] If you downloaded "Code ^> Download ZIP" from GitHub,
+		echo         use a Release asset instead, or clone with Git LFS.
+	) else (
+		echo [ERROR] Source files look corrupted or incomplete.
+	)
 	pause
 	exit /b 1
 )
