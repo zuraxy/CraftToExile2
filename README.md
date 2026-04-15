@@ -32,3 +32,4 @@ Run the same `OneClickDownloadModpack.bat` again any time you want to reinstall 
 - `Source modpack folder not found`: ensure the BAT file is in the repo root and the `CraftToExile2` folder is next to it.
 - `Could not remove existing target folder`: close Minecraft/SKLauncher and try again.
 - `Copy failed with robocopy exit code ...`: retry with admin permissions and verify file access.
+- If TLauncher downloads `preview_OptiFine...jar` or `tl_skin_cape...jar`, disable those add-ons or use the pack without TLauncher injected extras. They can break Forge startup for this modpack.
