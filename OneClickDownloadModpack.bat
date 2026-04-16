@@ -7,6 +7,10 @@ echo ================================================
 echo   CraftToExile2 - One Click Installer
 echo ================================================
 echo.
+echo This installer expects a release-ready folder with real mod JARs.
+echo If the JARs are Git LFS pointers, re-download the GitHub Release asset
+echo instead of using a source ZIP or a raw repository checkout.
+echo.
 
 set "PACK_NAME=CraftToExile2"
 set "SOURCE_DIR=%~dp0CraftToExile2"
@@ -72,12 +76,11 @@ echo.
 if %LFS_POINTER_COUNT% LEQ 0 goto preflight_corrupt
 
 echo [ERROR] These appear to be Git LFS pointer files, not real mods.
-echo         Fix by hydrating LFS files in the repo root:
-echo           git lfs install
-echo           git lfs pull
+echo         This checkout is not release-ready.
+echo         Re-download the GitHub Release asset that includes hydrated mods.
 echo.
-echo [ERROR] If you downloaded "Code ^> Download ZIP" from GitHub,
-echo         use a Release asset instead, or clone with Git LFS.
+echo [ERROR] Do not use "Code ^> Download ZIP" or a raw repo checkout for
+echo         the installer.
 pause
 exit /b 1
 
